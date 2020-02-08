@@ -1,0 +1,14 @@
+{
+  "name": "kafka-nodejs",
+  "version": "1.0.0",
+  "description": "Kafka NodeJS Example",
+  "scripts": {
+    "start-consumer": "node src/consumer.js",
+    "start-producer": "node src/producer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kafka-node": "^5.0.0"
+  }
+}

@@ -1,6 +1,9 @@
-# Viewer Kafka
+# Kafka examples
 
-Example Kafka acessing using external and internal clients with Scala and Node JS.
+Kafka acessing using external and internal clients with Scala and Node JS.
+
+## Kafka
+The following commands show how to start and test Kafka and Zookeeper directly from Docker.
 
 ### Start up Kafka and Zookeeper
 docker-compose up -d
@@ -17,10 +20,27 @@ docker exec -it kafka /bin/bash -c "echo "111" | kafka-console-producer.sh --top
 ```
 docker exec -it kafka /bin/bash -c "kafka-console-consumer.sh --topic=test-topic --from-beginning --bootstrap-server :9092"
 ```
-### Stop everything and prune
+### Stop everything and remove containers and volumes
 docker-compose stop && docker rm $(docker ps -a -q) && docker volume prune
 
-### Links 
+## NodeJS
+Once you have Kafka and Zookeeper running and `test-topic` created the following costumer and producer should work.
+
+### Consumer
+```
+cd nodejs
+npm i
+npm run start-consumer
+```
+
+### Producer
+```
+cd nodejs
+npm i
+npm run start-producer
+```
+
+## Links 
 [https://github.com/bitnami/bitnami-docker-kafka](https://github.com/bitnami/bitnami-docker-kafka)
 [https://hub.docker.com/r/bitnami/kafka/](https://hub.docker.com/r/bitnami/kafka/)
 [https://docs.bitnami.com/oci/infrastructure/kafka/get-started/understand-default-config/](https://docs.bitnami.com/oci/infrastructure/kafka/get-started/understand-default-config/)
