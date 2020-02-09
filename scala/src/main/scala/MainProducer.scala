@@ -15,10 +15,8 @@ object MainProducer extends App {
       .withBootstrapServers("localhost:29092")
 
   val source = Source("Scala" :: "Akka" :: Nil)
-
   val flow = Flow[String]
     .map(value => new ProducerRecord[String, String]("test-topic", value, "Record: " + value))
-
   val sink = Producer.plainSink(producerSettings)
 
   source.via(flow).runWith(sink)
