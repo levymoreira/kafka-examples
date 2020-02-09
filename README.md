@@ -1,6 +1,6 @@
 # Kafka examples
 
-Kafka accessing using internal clients and external(Scala and Node JS).
+Kafka accessing using internal clients and external (Scala and Node JS).
 
 ## Kafka
 The following commands show how to start and test Kafka and Zookeeper directly from Docker.
