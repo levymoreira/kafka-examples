@@ -58,7 +58,11 @@ npm run start-producer
 
 
 ## Links 
-[https://github.com/bitnami/bitnami-docker-kafka](https://github.com/bitnami/bitnami-docker-kafka)
-[https://hub.docker.com/r/bitnami/kafka/](https://hub.docker.com/r/bitnami/kafka/)
-[https://docs.bitnami.com/oci/infrastructure/kafka/get-started/understand-default-config/](https://docs.bitnami.com/oci/infrastructure/kafka/get-started/understand-default-config/)
+[https://github.com/bitnami/bitnami-docker-kafka](https://github.com/bitnami/bitnami-docker-kafka)  
+[https://hub.docker.com/r/bitnami/kafka/](https://hub.docker.com/r/bitnami/kafka/)  
+[https://docs.bitnami.com/oci/infrastructure/kafka/get-started/understand-default-config/](https://docs.bitnami.com/oci/infrastructure/kafka/get-started/understand-default-config/) 
+[https://doc.akka.io/docs/alpakka-kafka/current/home.html](https://doc.akka.io/docs/alpakka-kafka/current/home.html)  
+[https://www.npmjs.com/package/kafka-node](https://www.npmjs.com/package/kafka-node)  
+
+
 
