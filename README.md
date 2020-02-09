@@ -33,7 +33,7 @@ Once you have Kafka and Zookeeper running and `test-topic` created the following
 cd scala
 sbt "runMain MainConsumer"   
 ```
-### Consumer
+### Producer
 ```
 cd scala
 sbt "runMain MainProducer"   
